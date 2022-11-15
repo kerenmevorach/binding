@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+@font-face {
+	font-family: 'PP Radio Grotesk';
+	src: url('PPRadioGrotesk-Regular.otf') format('truetype');
+ }
+
 :root{
     --base: 16px;
 
-    font-family: sans-serif;
+    font-family: 'Lora', serif;
 
-    --heading: calc(var(--base)*2)
+    --heading: calc(var(--base)*2);
+
+    --leading: 25px;
+
+    --paragraph-spacing: 20px;
 }
 
 
@@ -14,19 +25,23 @@
 }
 
 body{
-    color: red;
     padding: var(--base);
 }
 
 h1{
     font-size: var(--heading);
+    font-family: 'PP Radio Grotesk';
 }
 
 p{
     max-width: 50ch;
+    line-height: var(--leading);
+    margin-top: var(--paragraph-spacing);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* all of my links - the paragraphs inside make them blue */
 a p{
-    color: blue;
+    /* color: blue; */
 }
