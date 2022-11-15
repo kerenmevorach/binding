@@ -1,3 +1,32 @@
+:root{
+    --base: 16px;
+
+    font-family: sans-serif;
+
+    --heading: calc(var(--base)*2)
+}
+
+
+@media (min-width: 600px) {
+    :root{
+        --base: 24px;
+    }
+}
+
 body{
     color: red;
+    padding: var(--base);
+}
+
+h1{
+    font-size: var(--heading);
+}
+
+p{
+    max-width: 50ch;
+}
+
+/* all of my links - the paragraphs inside make them blue */
+a p{
+    color: blue;
 }
