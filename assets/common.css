@@ -8,13 +8,15 @@
 :root{
     --base: 16px;
 
-    font-family: 'Lora', serif;
-
     --heading: calc(var(--base)*2);
 
     --leading: 25px;
 
     --paragraph-spacing: 20px;
+
+    font-family: 'Lora', serif;
+
+    color: black;
 }
 
 
