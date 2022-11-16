@@ -3,16 +3,28 @@
 @font-face {
 	font-family: 'PP Radio Grotesk';
 	src: url('PPRadioGrotesk-Regular.otf') format('truetype');
+    font-weight: 100;
+ }
+
+ @font-face {
+	font-family: 'PP Radio Grotesk';
+	src: url('PPRadioGrotesk-Bold.otf') format('truetype');
+    font-weight: 200;
  }
 
 :root{
     --base: 16px;
 
-    --heading: calc(var(--base)*2);
+    /* --heading: calc(var(--base)*3.5); */
+    --heading: 16vw;
 
     --leading: 25px;
 
+    --heading-leading: 16vw;
+
     --paragraph-spacing: 20px;
+
+    --nav-height: 40px;
 
     font-family: 'Lora', serif;
 
@@ -22,20 +34,44 @@
 
 @media (min-width: 600px) {
     :root{
-        --base: 24px;
+        --base: 23px;
+
+        --leading: 36px;
+
+        --heading: calc(16vw /1.4);
+
+        --heading-leading: calc(16vw /1.4);
     }
 }
 
 body{
     padding: var(--base);
+    border: solid black 2px;
 }
 
 h1{
     font-size: var(--heading);
+    line-height: var(--heading-leading);
+    /* line-height: calc(var(--leading)*2.3); */
     font-family: 'PP Radio Grotesk';
+    font-weight: 100;
+    max-width: 12ch;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 40px;
+}
+
+h2{
+    font-family: 'PP Radio Grotesk';
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: calc(var(--leading)/1.2);
+    margin-left: 5px;
+    margin-top: 25px;
 }
 
 p{
+    font-size: var(--base);
     max-width: 50ch;
     line-height: var(--leading);
     margin-top: var(--paragraph-spacing);
@@ -43,7 +79,136 @@ p{
     margin-right: 5px;
 }
 
+.last-paragraph-margin{
+    margin-bottom: 125px;
+}
+
+em{
+    font-style: italic;
+}
+
+.nav{
+    width: 100%;
+    height: var(--nav-height);
+    position: fixed;
+    left: 0px;
+    border: solid black 2px;
+}
+
+.home{
+    background-color: #1BB502;
+    top: 0px;
+}
+
+.entry1{
+    background-color: #FF5C00;
+    bottom: calc(var(--nav-height) * 2 - 4px);
+}
+
+.entry2{
+    background-color: #379FFF;
+    bottom: calc(var(--nav-height) - 2px);
+}
+
+.entry3{
+    background-color: #FFC700;
+    bottom: 0px;
+}
+
+.nav-text{
+    margin-top: 4px;
+    font-family: 'PP Radio Grotesk';
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    margin-left: 20px;
+    font-size: calc(var(--base)/1.3);
+    line-height: calc(var(--leading)/1.9);
+    max-width: 30ch;
+}
+
+.one-line{
+    margin-top:10px;
+}
+
+.selected-page{
+    font-weight: 200;
+}
+
+
 /* all of my links - the paragraphs inside make them blue */
 a p{
     /* color: blue; */
 }
+
+
+@media (min-width: 600px) {
+
+    h1{
+        /* font-size: calc(var(--heading) /1.3);
+        line-height: calc(var(--heading-leading) /1.3); */
+        font-size: var(--heading);
+        line-height: var(--heading-leading);
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 30ch;
+    }
+
+    h2{
+
+    }
+
+    p{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 52ch;
+    }
+
+    .nav{
+        width: var(--nav-height);
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        border: solid black 2px;
+    }
+    
+    .home{
+        background-color: #1BB502;
+        left: 0px;
+    }
+    
+    .entry1{
+        background-color: #FF5C00;
+        left: 50px;
+    }
+    
+    .entry2{
+        background-color: #379FFF;
+        left: 100px;
+    }
+    
+    .entry3{
+        background-color: #FFC700;
+        right: 100%;
+    }
+    
+    .nav-text{
+        margin-top: 474px;
+        margin-left: -120px;
+        font-size: calc(var(--base)/1.3);
+        line-height: calc(var(--leading)/1.9);
+        width: 1000px;
+        /* max-width: 100ch; */
+        transform: rotate(90deg);
+    }
+
+    a{
+        max-width: 1000ch;
+    }
+    
+    .one-line{
+        /* margin-top:10px; */
+    }
+}
+
+
