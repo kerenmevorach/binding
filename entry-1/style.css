@@ -1,3 +1,25 @@
-:root{
+/* :root{
     --heading: calc(var(--base)*2)
+} */
+
+.entry1{
+    background-color: #FF5C00;
+    top: calc(var(--nav-height) - 4px);
+    height: 150px;
+}
+
+.nav{
+    transition: 0.2s ease;
+}
+
+h2{
+    margin-top: 190px;
+}
+
+.mobile-title{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 100;
+    margin-top: 8px;
+    transition: 0.2s ease;
 }
