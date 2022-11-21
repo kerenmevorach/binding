@@ -218,7 +218,7 @@ em{
     }
     
     .nav-text{
-        font-size: calc(var(--base)/1.2);
+        font-size: 20px;;
         line-height: calc(var(--leading)/1.9);
         width: 600px;
         position: relative;
