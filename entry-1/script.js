@@ -1,13 +1,14 @@
-var mobileTitle = document.querySelector('.mobile-title')
-var firstEntry = document.querySelector('.entry1')
+let mobileTitle = document.querySelector('.mobile-title')
+let firstEntry = document.querySelector('.entry1')
+let navText = document.querySelector('.nav-text')
+let toggle = document.querySelector('#toggle')
+let body = document.querySelector('body')
 
-var navText = document.querySelector('#nav-text')
 
-// window.onscroll = function() {scrollFunction()};
-// window.addEventListener("scroll", scrollFunction);
+
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 90) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 0) {
     mobileTitle.style.fontSize = "calc(var(--base)/1.3)";
     mobileTitle.style.lineHeight = "calc(var(--leading)/1.9)";
     mobileTitle.style.fontWeight = "200";
@@ -21,22 +22,47 @@ function scrollFunction() {
     firstEntry.style.height = "150px";
 }
   }
+  
 
   function scrollToggle(x) {
     if (x.matches) { 
       // scrollFunction()
       window.addEventListener("scroll", scrollFunction);
-      // firstEntry.style.height = "var(--nav-height)";
+      // toggle.classList.remove("desktop-title");
+      // toggle.classList.add("mobile-title");
     } else {
       window.removeEventListener("scroll",scrollFunction);
-      mobileTitle.style.fontSize = "calc(var(--base)/1.3)";
-      mobileTitle.style.lineHeight = "calc(var(--leading)/1.9)";
-      // firstEntry.style.height = "100%";
-      // firstEntry.style.top = "0";
-      // navText.classList.remove("mobile-title");
+      // toggle.classList.remove("mobile-title");
+      // toggle.classList.add("desktop-title");
     }
   }
+
+  //   window.addEventListener("load", (event) => {
+  //   console.log("page is fully loaded");
+  // });
+
   
-  var x = window.matchMedia("(max-width: 750px)")
+  let x = window.matchMedia("(max-width: 750px)")
   scrollToggle(x) // Call listener function at run time
   x.addListener(scrollToggle) // Attach listener function on state changes
+
+  // window.addEventListener("resize", scrollToggle);
+
+  // body.onload = function(){
+  //   console.log('hi there')
+  //   // scrollFunction
+  // };
+
+
+  // window.addEventListener("load", (event) => {
+  //   console.log("page is fully loaded");
+  //   scrollToggle(x)
+  // });
+
+
+  //on load make font this
+
+
+  //if body or if viewport width =. etc...
+
+  
