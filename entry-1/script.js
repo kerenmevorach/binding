@@ -1,7 +1,6 @@
 let mobileTitle = document.querySelector('.mobile-title')
 let firstEntry = document.querySelector('.entry1')
 let navText = document.querySelector('.nav-text')
-let toggle = document.querySelector('#toggle')
 let body = document.querySelector('body')
 
 function smallMobileNav(){
@@ -17,7 +16,7 @@ function largeMobileNav(){
   mobileTitle.style.lineHeight = "40px";
   mobileTitle.style.fontWeight = "100";
   mobileTitle.style.marginTop = "8px";
-  firstEntry.style.height = "150px";
+  firstEntry.style.height = "var(--selected-nav-height)";
 }
 
 function desktopNav(){
@@ -30,7 +29,7 @@ function desktopNav(){
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 0) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 80) {
     smallMobileNav()
   } else {
     largeMobileNav()
@@ -52,6 +51,6 @@ function scrollFunction() {
   }
 
   
-  let x = window.matchMedia("(max-width: 750px)")
+  let x = window.matchMedia("(max-width: 899px)")
   scrollToggle(x) // Call listener function at run time
   x.addListener(scrollToggle) // Attach listener function on state changes
