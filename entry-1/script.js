@@ -39,7 +39,6 @@ function scrollFunction() {
 
   function scrollToggle(x) {
     if (x.matches) { 
-      // scrollFunction()
       console.log('add')
       window.addEventListener("scroll", scrollFunction);
       largeMobileNav()
