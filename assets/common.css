@@ -197,6 +197,13 @@ em{
     color: blue;
 } */
 
+@media (min-width: 500px){
+ p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (min-width: 700px) {
     .nav{
         margin-left: -20px;
@@ -211,13 +218,15 @@ em{
     }
 
     p{
-        margin-left: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .green-line{
         margin-left: 20px;
     }
 }
+
 
 @media (min-width: 900px) {
 

@@ -4,8 +4,8 @@ let navText = document.querySelector('.nav-text')
 let body = document.querySelector('body')
 
 function smallMobileNav(){
-  mobileTitle.style.fontSize = "calc(var(--base)/1.3)";
-  mobileTitle.style.lineHeight = "calc(var(--leading)/1.9)";
+  mobileTitle.style.fontSize = "calc(16px/1.3)";
+  mobileTitle.style.lineHeight = "calc(25px/1.9)";
   mobileTitle.style.fontWeight = "200";
   mobileTitle.style.marginTop = "4px";
   firstEntry.style.height = "var(--nav-height)";
