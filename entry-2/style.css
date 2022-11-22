@@ -1,0 +1,273 @@
+:root{
+    --selected-nav-height: 185px;
+}
+
+@media (min-width: 397px) {
+    :root{
+    --selected-nav-height: 150px;
+ }
+ }
+
+ @media (min-width: 549px) {
+    :root{
+        --selected-nav-height: 110px;
+ }
+ }
+
+
+@media (min-width: 900px) {
+   :root{
+    --heading: 5vw;
+    --heading-leading: 5.5vw;
+}
+}
+
+.entry1{
+    background-color: #FF5C00;
+    top: calc(var(--nav-height) * 2 - 42px);
+}
+
+.entry2{
+    background-color: #379FFF;
+    top: calc(var(--nav-height)*2 - 4px);
+    height: var(--selected-nav-height);
+}
+
+.nav{
+    transition: 0.2s ease;
+}
+
+h2{
+    margin-top: 265px;
+}
+
+.mobile-title{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 100;
+    margin-top: 8px;
+    transition: 0.2s ease;
+    /* max-width: 20ch; */
+}
+
+.desktop-title{
+    font-size: calc(var(--base)/1.2);
+    line-height: calc(var(--leading)/1.9);
+    width: 600px;
+    position: relative;
+    top: 306px;
+    left: -295px;
+    max-width: 100ch;
+    transform: rotate(90deg);
+}
+
+h1{
+    display: none;
+}
+
+blockquote{
+    font-size: calc(var(--base) * 1.2);
+    line-height: calc(var(--leading) * 1.2);
+    max-width: 50ch;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.block-line{
+    height: 78px;
+    width: 15px;
+    margin-top: 8px;
+    background-color: #379FFF;
+    margin-right: 15px;
+}
+
+.last-paragraph-margin{
+    margin-bottom: 56px;
+}
+
+@media (min-width: 397px) {
+
+    h2{
+        margin-top: 232px;
+    }
+}
+
+
+@media (min-width: 446px) {
+
+    .selected-page{
+        max-width: 25ch;
+}
+}
+
+@media (min-width: 489px) {
+    .block-line{
+        height: 47px;
+    }
+}
+
+@media (min-width: 500px) {
+    .selected-page{
+        max-width: 25ch;
+    }
+
+    h2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 495px;
+        margin-top: 144px;
+    }
+
+    blockquote{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 41ch;
+    }
+
+    p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 549px) {
+    .selected-page{
+        max-width: 30ch;
+    }
+
+    h2{
+        margin-top: 195px;
+    }
+}
+
+/* @media (min-width: 555px) {
+.selected-page{
+    max-width: 30ch;
+}
+} */
+
+@media (min-width: 700px) {
+    h1{
+        margin-left: 0px;
+    }
+
+    h2{
+        width: 620px;
+    }
+
+    blockquote{
+        font-size: calc(var(--base)*1.1);
+        line-height: calc(var(--base)*1.7);
+        max-width: 45ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .block-line{
+        height: 53px;
+    }
+}
+
+
+@media (min-width: 900px) {
+    h1{
+        display: block;
+        font-size: var(--heading);
+        line-height: var(--heading-leading);
+        margin-left: 22%;
+        max-width: 20ch;
+        margin-top: 20px;
+    }
+
+    h2{
+        margin-left: 22%;
+        margin-top: 40px;
+    }
+
+    p{
+        width: 75%;
+        margin-left: 22%;
+    }
+    
+    blockquote{
+        margin-left: 22%;
+    }
+
+    .block-line{
+        height: 47px;
+    }
+
+    .nav{
+        width: calc(var(--nav-height) * 1.2);
+        height: 100%;
+        margin-left: 0px;
+        top: 0px;
+    }
+
+    .nav-text{
+        font-size: 19px;
+        line-height: calc(var(--leading)/1.9);
+        width: 600px;
+        position: relative;
+        top: 306px;
+        left: -295px;
+        max-width: 110ch;
+        transform: rotate(90deg);
+        margin-top: 4px;
+    }
+
+    .selected-page{
+        font-weight: 200;
+    }
+
+    .entry1{
+        left: calc(var(--nav-height) + 6px);
+    }
+
+    .entry2{
+        left: calc(var(--nav-height)*2 + 12px);
+    }
+
+    .last-paragraph-margin{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    h1{
+        max-width: 20ch;
+        margin-left: 21%;
+        margin-right: 21%;
+    }
+
+    h2{
+        font-size: calc(var(--heading)/2.6);
+        line-height: calc(5.5vw / 2.2);
+        margin-left: 21%;
+        margin-right: 21%;
+        margin-top: 30px;
+    }
+
+    p{
+        margin-left: 21%;
+        margin-right: 21%;
+    }
+
+    blockquote{
+        font-size: var(--base);
+        max-width: 50ch;
+        margin-left: 21%;
+        margin-right: 21%;
+    }
+
+    .block-line{
+        height:52px;
+    }
+}
+
+
+

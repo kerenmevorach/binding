@@ -1,5 +1,5 @@
 let mobileTitle = document.querySelector('.mobile-title')
-let firstEntry = document.querySelector('.entry1')
+let secondEntry = document.querySelector('.entry2')
 let navText = document.querySelector('.nav-text')
 let body = document.querySelector('body')
 
@@ -8,7 +8,7 @@ function smallMobileNav(){
   mobileTitle.style.lineHeight = "calc(25px/1.9)";
   mobileTitle.style.fontWeight = "200";
   mobileTitle.style.marginTop = "4px";
-  firstEntry.style.height = "var(--nav-height)";
+  secondEntry.style.height = "var(--nav-height)";
 }
 
 function largeMobileNav(){
@@ -16,7 +16,7 @@ function largeMobileNav(){
   mobileTitle.style.lineHeight = "40px";
   mobileTitle.style.fontWeight = "100";
   mobileTitle.style.marginTop = "8px";
-  firstEntry.style.height = "var(--selected-nav-height)";
+  secondEntry.style.height = "var(--selected-nav-height)";
 }
 
 function desktopNav(){
@@ -24,7 +24,7 @@ function desktopNav(){
   mobileTitle.style.lineHeight = "calc(var(--leading)/1.9)";
   mobileTitle.style.fontWeight = "200";
   mobileTitle.style.marginTop = "4px";
-  firstEntry.style.height = "100%";
+  secondEntry.style.height = "100%";
 }
 
 

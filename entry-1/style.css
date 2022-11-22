@@ -178,7 +178,7 @@ blockquote{
     }
 
     .nav-text{
-        font-size: 20px;
+        font-size: 19px;
         line-height: calc(var(--leading)/1.9);
         width: 600px;
         position: relative;
