@@ -1,10 +1,11 @@
 :root{
-    --selected-nav-height: 150px;
+    --selected-nav-height: 110px;
 }
 
-@media (min-width: 500px) {
+
+ @media (min-width: 517px) {
     :root{
-    --selected-nav-height: 110px;
+        --selected-nav-height: 70px;
  }
  }
 
@@ -16,14 +17,28 @@
 }
 }
 
+
 a:hover{
-    color: #FF5C00;
+    color: #FFC700;
+}
+
+.selected-page{
+    /* max-width: 20ch; */
 }
 
 .entry1{
     background-color: #FF5C00;
-    top: calc(var(--nav-height) - 4px);
+    top: calc(var(--nav-height) * 2 - 42px);
+}
+
+.entry2{
+    background-color: #379FFF;
+    top: calc(var(--nav-height) * 3 - 44px);
+}
+
+.entry3{
     height: var(--selected-nav-height);
+    top: calc(var(--nav-height) * 4 - 46px);
 }
 
 .nav{
@@ -31,7 +46,7 @@ a:hover{
 }
 
 h2{
-    margin-top: 190px;
+    margin-top: 228px;
 }
 
 .mobile-title{
@@ -40,7 +55,6 @@ h2{
     font-weight: 100;
     margin-top: 8px;
     transition: 0.2s ease;
-    /* max-width: 20ch; */
 }
 
 .desktop-title{
@@ -61,7 +75,7 @@ h1{
 blockquote{
     font-size: calc(var(--base) * 1.2);
     line-height: calc(var(--leading) * 1.2);
-    max-width: 50ch;
+    /* max-width: 50ch; */
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 30px;
@@ -70,23 +84,23 @@ blockquote{
 }
 
 .block-line{
-    height: 78px;
+    height: 100px;
     width: 15px;
     margin-top: 8px;
-    background-color: #FF5C00;
+    background-color: #FFC700;;
     margin-right: 15px;
 }
 
 .last-paragraph-margin{
-    margin-bottom: 86px;
+    margin-bottom: 56px;
 }
 
-@media (min-width: 446px) {
+@media (min-width: 397px) {
+    h2{
+        margin-top: 232px;
+    }
+}
 
-    .selected-page{
-        max-width: 20ch;
-}
-}
 
 @media (min-width: 489px) {
     .block-line{
@@ -95,14 +109,6 @@ blockquote{
 }
 
 @media (min-width: 500px) {
-    blockquote{
-        max-width: 40ch;
-    }
-
-    .selected-page{
-        max-width: 30ch;
-    }
-
     h2{
         margin-left: auto;
         margin-right: auto;
@@ -122,6 +128,27 @@ blockquote{
     }
 }
 
+@media (min-width: 533px) {
+    .selected-page{
+        max-width: 30ch;
+    }
+    h2{
+        margin-top: 190px;
+    }
+}
+
+@media (min-width: 549px) {
+    h2{
+        margin-top: 195px;
+    }
+}
+
+/* @media (min-width: 555px) {
+.selected-page{
+    max-width: 30ch;
+}
+} */
+
 @media (min-width: 700px) {
     h1{
         margin-left: 0px;
@@ -129,7 +156,6 @@ blockquote{
 
     h2{
         width: 620px;
-        margin-top: 162px;
     }
 
     blockquote{
@@ -151,23 +177,23 @@ blockquote{
         display: block;
         font-size: var(--heading);
         line-height: var(--heading-leading);
-        margin-left: 17%;
+        margin-left: 22%;
         max-width: 20ch;
         margin-top: 20px;
     }
 
     h2{
-        margin-left: 17%;
+        margin-left: 22%;
         margin-top: 40px;
     }
 
     p{
         width: 75%;
-        margin-left: 17%;
+        margin-left: 22%;
     }
     
     blockquote{
-        margin-left: 17%;
+        margin-left: 22%;
     }
 
     .block-line{
@@ -188,7 +214,7 @@ blockquote{
         position: relative;
         top: 306px;
         left: -295px;
-        max-width: 100ch;
+        max-width: 110ch;
         transform: rotate(90deg);
         margin-top: 4px;
     }
@@ -201,6 +227,14 @@ blockquote{
         left: calc(var(--nav-height) + 6px);
     }
 
+    .entry2{
+        left: calc(var(--nav-height)*2 + 12px);
+    }
+
+    .entry3{
+        left: calc(var(--nav-height)*3 + 18px);
+    }
+
     .last-paragraph-margin{
         margin-bottom: 50px;
     }
@@ -210,27 +244,28 @@ blockquote{
 @media (min-width: 1100px) {
     h1{
         max-width: 20ch;
-        margin-left: 18%;
-        margin-right: 18%;
+        margin-left: 21%;
+        margin-right: 21%;
     }
 
     h2{
         font-size: calc(var(--heading)/2.6);
         line-height: calc(5.5vw / 2.2);
-        margin-left: 18%;
-        margin-right: 18%;
+        margin-left: 21%;
+        margin-right: 21%;
         margin-top: 30px;
     }
 
     p{
-        margin-left: 18%;
+        margin-left: 21%;
+        margin-right: 21%;
     }
 
     blockquote{
         font-size: var(--base);
         max-width: 50ch;
-        margin-left: 18%;
-        margin-right: 18%;
+        margin-left: 21%;
+        margin-right: 21%;
     }
 
     .block-line{
@@ -238,25 +273,5 @@ blockquote{
     }
 }
 
-@media (min-width: 1200px) {
-    h1{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
 
-    h2{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-
-    p{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-
-    blockquote{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
 

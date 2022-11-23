@@ -22,6 +22,10 @@
 }
 }
 
+a:hover{
+    color: #379FFF;
+}
+
 .entry1{
     background-color: #FF5C00;
     top: calc(var(--nav-height) * 2 - 42px);
@@ -118,7 +122,7 @@ blockquote{
         margin-left: auto;
         margin-right: auto;
         width: 495px;
-        margin-top: 144px;
+        margin-top: 225px;
     }
 
     blockquote{
