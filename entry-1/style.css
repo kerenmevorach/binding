@@ -16,9 +16,16 @@
 }
 }
 
+a{
+    color: rgb(161, 161, 161);
+    text-decoration: underline;
+}
+
 a:hover{
     color: #FF5C00;
+    cursor: pointer;
 }
+
 
 .entry1{
     background-color: #FF5C00;

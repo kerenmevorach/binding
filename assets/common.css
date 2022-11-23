@@ -80,13 +80,68 @@
     }
 }
 
-.rectangle{
-    border: solid black 2px;
+@media print{
+
+    @page{
+        margin: 70px;
+    }
+
+    :root{
+        --body-copy:12pt;
+        --page-spacing: 0.25in;
+
+        --heading: calc(var(--base) * 6);
+        --sub-heading: calc(var(--body-copy) * 3);
+
+        --brand-color: white;
+
+        --nav-height: 20px;
+    }
+
+    .nav{
+        height: 10px;
+    }
+
+    .nav-text{
+        display: none;
+    }
+}
+
+.nav:hover{
+    opacity: 80%;
+}
+
+.border{
+    background-color: black;
     position: fixed;
+}
+
+.top-line{
+    height: 2px;
     width: 100%;
-    height: 100%;
     top: 0px;
     left: 0px;
+}
+
+.bottom-line{
+    height: 2px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+.left-line{
+    height: 100%;
+    width: 2px;
+    left: 0px;
+    top: 0px;
+}
+
+.right-line{
+    height: 100%;
+    width: 2px;
+    right: 0px;
+    top: 0px;
 }
 
 .green-line{
@@ -112,7 +167,6 @@ a{
 
 a:hover{
     cursor: pointer;
-    color: #1BB502;
 }
 
 h1{
@@ -215,9 +269,9 @@ sup {
 
 
 /* all of my links - the paragraphs inside make them blue */
-a p{
+/* a p{
     color: blue;
-}
+} */
 
 @media (min-width: 500px){
  p{

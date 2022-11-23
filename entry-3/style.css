@@ -17,7 +17,6 @@
 }
 }
 
-
 a:hover{
     color: #FFC700;
 }
@@ -47,6 +46,11 @@ a:hover{
 
 h2{
     margin-top: 228px;
+}
+
+footer{
+    /* width: 80%; */
+    margin: 0px;
 }
 
 .mobile-title{
@@ -177,23 +181,23 @@ blockquote{
         display: block;
         font-size: var(--heading);
         line-height: var(--heading-leading);
-        margin-left: 22%;
+        margin-left: 26%;
         max-width: 20ch;
         margin-top: 20px;
     }
 
     h2{
-        margin-left: 22%;
+        margin-left: 26%;
         margin-top: 40px;
     }
 
     p{
         width: 75%;
-        margin-left: 22%;
+        margin-left: 26%;
     }
     
     blockquote{
-        margin-left: 22%;
+        margin-left: 26%;
     }
 
     .block-line{
@@ -244,21 +248,21 @@ blockquote{
 @media (min-width: 1100px) {
     h1{
         max-width: 20ch;
-        margin-left: 21%;
-        margin-right: 21%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     h2{
         font-size: calc(var(--heading)/2.6);
         line-height: calc(5.5vw / 2.2);
-        margin-left: 21%;
-        margin-right: 21%;
+        margin-left: 25%;
+        margin-right: 25%;
         margin-top: 30px;
     }
 
     p{
-        margin-left: 21%;
-        margin-right: 21%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     blockquote{
