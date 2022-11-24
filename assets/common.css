@@ -83,27 +83,24 @@
 @media print{
 
     @page{
-        margin: 70px;
+        margin: 0.65in;
     }
 
     :root{
-        --body-copy:12pt;
+        --base:11pt;
+        --leading: 18pt;
+
         --page-spacing: 0.25in;
+        --paragraph-spacing: 20px;
 
-        --heading: calc(var(--base) * 6);
-        --sub-heading: calc(var(--body-copy) * 3);
-
-        --brand-color: white;
+        --heading: calc(var(--base) * 6.3);
+        --heading-leading: calc(var(--base) * 6.45);
 
         --nav-height: 20px;
-    }
-
-    .nav{
-        height: 10px;
-    }
-
-    .nav-text{
-        display: none;
+    
+        font-family: 'Lora', serif;
+    
+        color: black;
     }
 }
 
@@ -391,4 +388,48 @@ sup {
     p{
         max-width: 58ch;
     }
+}
+
+@media print{
+
+    .nav-text{
+        display: none;
+    }
+
+    h1{
+        margin-left: 50px;
+    }
+
+    h2{
+        margin-left: 50px;
+    }
+
+    p{
+        margin-left: 50px;
+        max-width: 59ch;
+    }
+
+    .green-line{
+        margin-top: 5px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin-left: 50px;
+        /* margin-bottom: 15px; */
+    }
+
+
+    .page-break-bottom{
+        margin-bottom: 200px;
+    }
+
+    .page-break{
+        /* position: relative;
+        top: 200px; */
+        margin-top: 200px;
+    }
+
+    /* .paragraph-break{
+        position: relative;
+        top: 100px;
+    } */
 }

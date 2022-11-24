@@ -16,14 +16,27 @@
 }
 }
 
-a{
-    color: rgb(161, 161, 161);
-    text-decoration: underline;
+@media print{
+
+    @page{
+        margin: 0.65in;
+    }
+
+    :root{
+        --heading: calc(var(--base) * 6.3);
+        --heading-leading: calc(var(--base) * 6.45);
+
+        --nav-height: 20px;
+        /* --selected-nav-height: 0px; */
+    
+        font-family: 'Lora', serif;
+    
+        color: black;
+    }
 }
 
 a:hover{
     color: #FF5C00;
-    cursor: pointer;
 }
 
 
@@ -267,3 +280,17 @@ blockquote{
     }
 }
 
+@media print{
+    h1{
+        display: block;
+    }
+
+    .nav{
+        height: 20px;
+    }
+
+    .entry1{
+        height: 20px;
+    }
+
+}
