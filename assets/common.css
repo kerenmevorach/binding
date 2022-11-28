@@ -418,18 +418,31 @@ sup {
     }
 
 
-    .page-break-bottom{
-        margin-bottom: 200px;
+    .page-break-small{
+        padding-bottom: 100px;
     }
 
-    .page-break{
-        /* position: relative;
-        top: 200px; */
-        margin-top: 200px;
+
+    .page-break-large{
+        padding-top: 80px;
+        page-break-before: always;
     }
 
-    /* .paragraph-break{
-        position: relative;
-        top: 100px;
-    } */
+
+    .break{
+        display: inline-block;
+        width: 100%;
+        height: 90px;
+    }
+
+
+    .break-large{
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+        background-color: red;
+    }
+
+
+
 }

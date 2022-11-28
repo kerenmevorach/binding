@@ -21,10 +21,6 @@ a:hover{
     color: #FFC700;
 }
 
-.selected-page{
-    /* max-width: 20ch; */
-}
-
 .entry1{
     background-color: #FF5C00;
     top: calc(var(--nav-height) * 2 - 42px);
@@ -49,7 +45,6 @@ h2{
 }
 
 footer{
-    /* width: 80%; */
     margin: 0px;
 }
 
@@ -117,7 +112,6 @@ blockquote{
         margin-left: auto;
         margin-right: auto;
         width: 495px;
-        margin-top: 144px;
     }
 
     blockquote{
@@ -129,6 +123,12 @@ blockquote{
     p{
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (min-width: 517px) {
+    h2{
+        margin-top: 191px;
     }
 }
 

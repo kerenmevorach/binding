@@ -2,6 +2,7 @@
     --selected-nav-height: 150px;
 }
 
+
 @media (min-width: 500px) {
     :root{
     --selected-nav-height: 110px;
@@ -23,11 +24,10 @@
     }
 
     :root{
-        --heading: calc(var(--base) * 6.3);
-        --heading-leading: calc(var(--base) * 6.45);
+        --heading: calc(var(--base) * 2.8);
+        --heading-leading: calc(var(--base) * 3.3);
 
-        --nav-height: 20px;
-        /* --selected-nav-height: 0px; */
+        --selected-nav-height: 20px;
     
         font-family: 'Lora', serif;
     
@@ -99,6 +99,10 @@ blockquote{
 
 .last-paragraph-margin{
     margin-bottom: 86px;
+}
+
+.push{
+    padding-top: 0px;
 }
 
 @media (min-width: 446px) {
@@ -283,6 +287,22 @@ blockquote{
 @media print{
     h1{
         display: block;
+        max-width: 20ch;
+        margin-top: 65px;
+        margin-left: 62px;
+    }
+
+    h2{
+        margin-top: 45px;
+        margin-left: 62px;
+    }
+
+    p{
+        /* max-width: 50ch; */
+    }
+
+    blockquote{
+        margin-left: 62px;
     }
 
     .nav{
@@ -292,5 +312,4 @@ blockquote{
     .entry1{
         height: 20px;
     }
-
 }
