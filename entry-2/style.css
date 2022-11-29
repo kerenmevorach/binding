@@ -22,6 +22,24 @@
 }
 }
 
+@media print{
+
+    @page{
+        margin: 0.65in;
+    }
+
+    :root{
+        --heading: calc(var(--base) * 2.8);
+        --heading-leading: calc(var(--base) * 3.3);
+
+        --selected-nav-height: 20px;
+    
+        font-family: 'Lora', serif;
+    
+        color: black;
+    }
+}
+
 a:hover{
     color: #379FFF;
 }
@@ -121,14 +139,14 @@ blockquote{
     h2{
         margin-left: auto;
         margin-right: auto;
-        width: 495px;
+        width: 550px;
         margin-top: 225px;
     }
 
     blockquote{
         margin-left: auto;
         margin-right: auto;
-        max-width: 41ch;
+        max-width: 46ch;
     }
 
     p{
@@ -159,13 +177,13 @@ blockquote{
     }
 
     h2{
-        width: 620px;
+        width: 702px;
     }
 
     blockquote{
         font-size: calc(var(--base)*1.1);
         line-height: calc(var(--base)*1.7);
-        max-width: 45ch;
+        max-width: 50ch;
         margin-left: auto;
         margin-right: auto;
     }
@@ -249,8 +267,8 @@ blockquote{
     }
 
     h2{
-        font-size: calc(var(--heading)/2.6);
-        line-height: calc(5.5vw / 2.2);
+        /* font-size: calc(var(--heading)/2.6);
+        line-height: calc(5.5vw / 2.2); */
         margin-left: 21%;
         margin-right: 21%;
         margin-top: 30px;
@@ -273,5 +291,44 @@ blockquote{
     }
 }
 
+
+@media print{
+    h1{
+        display: block;
+        max-width: 20ch;
+        margin-top: 80px;
+        margin-left: 62px;
+    }
+
+    h2{
+        margin-top: 45px;
+        margin-left: 62px;
+    }
+
+    p{
+        /* max-width: 50ch; */
+    }
+
+    blockquote{
+        margin-left: 62px;
+    }
+
+    .nav{
+        height: 20px;
+        left: 16px;
+    }
+
+    .home{
+        top: 0px;
+    }
+
+    .entry1{
+        top: 18px;
+    }
+
+    .entry2{
+        top: 36px;
+    }
+}
 
 

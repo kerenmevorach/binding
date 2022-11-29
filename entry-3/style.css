@@ -17,6 +17,24 @@
 }
 }
 
+@media print{
+
+    @page{
+        margin: 0.65in;
+    }
+
+    :root{
+        --heading: calc(var(--base) * 2.8);
+        --heading-leading: calc(var(--base) * 3.3);
+
+        --selected-nav-height: 20px;
+    
+        font-family: 'Lora', serif;
+    
+        color: black;
+    }
+}
+
 a:hover{
     color: #FFC700;
 }
@@ -111,7 +129,7 @@ blockquote{
     h2{
         margin-left: auto;
         margin-right: auto;
-        width: 495px;
+        width: 552px;
     }
 
     blockquote{
@@ -159,7 +177,7 @@ blockquote{
     }
 
     h2{
-        width: 620px;
+        width: 679px;
     }
 
     blockquote{
@@ -253,8 +271,8 @@ blockquote{
     }
 
     h2{
-        font-size: calc(var(--heading)/2.6);
-        line-height: calc(5.5vw / 2.2);
+        /* font-size: calc(var(--heading)/2.6);
+        line-height: calc(5.5vw / 2.2); */
         margin-left: 25%;
         margin-right: 25%;
         margin-top: 30px;
@@ -274,6 +292,49 @@ blockquote{
 
     .block-line{
         height:52px;
+    }
+}
+
+@media print{
+    h1{
+        display: block;
+        max-width: 20ch;
+        margin-top: 80px;
+        margin-left: 62px;
+    }
+
+    h2{
+        margin-top: 30px;
+        margin-left: 62px;
+    }
+
+    p{
+        /* max-width: 50ch; */
+    }
+
+    blockquote{
+        margin-left: 62px;
+    }
+
+    .nav{
+        height: 20px;
+        left: 16px;
+    }
+
+    .home{
+        top: 0px;
+    }
+
+    .entry1{
+        top: 18px;
+    }
+
+    .entry2{
+        top: 36px;
+    }
+
+    .entry3{
+        top: 54px;
     }
 }
 
