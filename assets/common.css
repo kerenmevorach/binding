@@ -15,11 +15,11 @@
 :root{
     --base: 16px;
 
-    --heading: 16vw;
+    --heading: 15vw;
 
     --leading: 25px;
 
-    --heading-leading: 16vw;
+    --heading-leading: 15.5vw;
 
     --paragraph-spacing: 20px;
 
@@ -37,9 +37,9 @@
 
         --leading: 32px;
 
-        --heading: calc(16vw /1.2);
+        /* --heading: calc(16vw /1.2);
 
-        --heading-leading: calc(16vw /1.2);
+        --heading-leading: calc(16vw /1.2); */
 
         --paragraph-spacing: 30px;
     }
