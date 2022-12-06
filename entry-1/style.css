@@ -156,21 +156,13 @@ blockquote{
         margin-top: 162px;
     }
 
-    blockquote{
-        font-size: calc(var(--base)*1.1);
-        line-height: calc(var(--base)*1.7);
-        max-width: 50ch;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .block-line{
-        height: 53px;
+        height: 63px;
     }
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 1050px) {
     h1{
         display: block;
         font-size: var(--heading);
@@ -192,10 +184,6 @@ blockquote{
     
     blockquote{
         margin-left: 17%;
-    }
-
-    .block-line{
-        height: 47px;
     }
 
     .nav{
@@ -251,14 +239,9 @@ blockquote{
     }
 
     blockquote{
-        font-size: var(--base);
         max-width: 50ch;
         margin-left: 18%;
         margin-right: 18%;
-    }
-
-    .block-line{
-        height:52px;
     }
 }
 
@@ -281,6 +264,10 @@ blockquote{
     blockquote{
         margin-left: 20%;
         margin-right: 20%;
+    }
+
+    .block-line{
+        height: 69px;
     }
 }
 

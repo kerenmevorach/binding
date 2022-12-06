@@ -3,7 +3,7 @@
 }
 
 
- @media (min-width: 517px) {
+@media (min-width: 500px) {
     :root{
         --selected-nav-height: 70px;
  }
@@ -101,7 +101,7 @@ blockquote{
 }
 
 .block-line{
-    height: 100px;
+    height: 110px;
     width: 15px;
     margin-top: 8px;
     background-color: #FFC700;;
@@ -118,12 +118,22 @@ blockquote{
     }
 }
 
-
-@media (min-width: 489px) {
-    .block-line{
-        height: 47px;
-    }
+@media (min-width: 407px) {
+.block-line{
+    height: 80px;
 }
+
+.tall{
+    height: 110px; 
+}
+}
+
+@media (min-width: 449px) {
+    .tall{
+        height: 80px; 
+    }
+    }
+
 
 @media (min-width: 500px) {
     h2{
@@ -135,16 +145,24 @@ blockquote{
     blockquote{
         margin-left: auto;
         margin-right: auto;
-        max-width: 41ch;
+        width: 552px;
     }
 
     p{
         margin-left: auto;
         margin-right: auto;
     }
+
+    .block-line{
+        height: 46px;
+    }
+
+    .tall{
+        height: 75px;
+    }
 }
 
-@media (min-width: 517px) {
+@media (min-width: 500px) {
     h2{
         margin-top: 191px;
     }
@@ -165,12 +183,6 @@ blockquote{
     }
 }
 
-/* @media (min-width: 555px) {
-.selected-page{
-    max-width: 30ch;
-}
-} */
-
 @media (min-width: 700px) {
     h1{
         margin-left: 0px;
@@ -181,20 +193,20 @@ blockquote{
     }
 
     blockquote{
-        font-size: calc(var(--base)*1.1);
-        line-height: calc(var(--base)*1.7);
-        max-width: 45ch;
-        margin-left: auto;
-        margin-right: auto;
+        width: 695px;
     }
 
     .block-line{
-        height: 53px;
+        height: 60px;
+    }
+
+    .tall{
+        height: 99px;
     }
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 1050px) {
     h1{
         display: block;
         font-size: var(--heading);
@@ -219,7 +231,11 @@ blockquote{
     }
 
     .block-line{
-        height: 47px;
+        height: 60px;
+    }
+
+    .tall{
+        height: 100px;
     }
 
     .nav{
@@ -284,14 +300,15 @@ blockquote{
     }
 
     blockquote{
-        font-size: var(--base);
-        max-width: 50ch;
-        margin-left: 21%;
-        margin-right: 21%;
+        margin-left: 25%;
     }
 
     .block-line{
-        height:52px;
+        height:69px;
+    }
+
+    .tall{
+        height: 105px;
     }
 }
 

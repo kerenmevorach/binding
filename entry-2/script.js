@@ -50,6 +50,6 @@ function scrollFunction() {
   }
 
   
-  let x = window.matchMedia("(max-width: 899px)")
+  let x = window.matchMedia("(max-width: 1049px)")
   scrollToggle(x) // Call listener function at run time
   x.addListener(scrollToggle) // Attach listener function on state changes
