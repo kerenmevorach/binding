@@ -338,6 +338,11 @@ blockquote{
         margin-left: 62px;
     }
 
+    .block-line{
+        width: 10px;
+        height: 44px;
+    }
+
     .nav{
         height: 20px;
     }

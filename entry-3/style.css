@@ -121,6 +121,10 @@ blockquote{
     margin-right: 15px;
 }
 
+.shorter{
+    height: 79px;
+}
+
 .last-paragraph-margin{
     margin-bottom: 56px;
 }
@@ -145,20 +149,27 @@ blockquote{
     .tall{
         height: 80px; 
     }
+}
+
+@media (min-width: 482px) {
+    .exit{
+        height: 48px; 
     }
+}
 
 
 @media (min-width: 500px) {
     h2{
         margin-left: auto;
         margin-right: auto;
+        margin-top: 191px;
         width: 552px;
     }
 
     blockquote{
         margin-left: auto;
         margin-right: auto;
-        width: 552px;
+        width: 515px;
     }
 
     p{
@@ -175,11 +186,6 @@ blockquote{
     }
 }
 
-@media (min-width: 500px) {
-    h2{
-        margin-top: 191px;
-    }
-}
 
 @media (min-width: 533px) {
     .selected-page{
@@ -193,6 +199,12 @@ blockquote{
 @media (min-width: 549px) {
     h2{
         margin-top: 195px;
+    }
+}
+
+@media (min-width: 581px) {
+    blockquote{
+        width: 552px;
     }
 }
 
@@ -325,6 +337,13 @@ blockquote{
     }
 }
 
+@media (min-width: 1200px) {
+    blockquote{
+        margin-left: 25%;
+        width: 799px;
+    }
+}
+
 @media print{
     h1{
         display: block;
@@ -344,6 +363,11 @@ blockquote{
 
     blockquote{
         margin-left: 62px;
+    }
+
+    .block-line{
+        width: 10px;
+        /* height: 44px; */
     }
 
     .nav{

@@ -10,7 +10,7 @@
  }
  }
 
- @media (min-width: 500px) {
+ @media (min-width: 526px) {
     :root{
         --selected-nav-height: 110px;
  }
@@ -337,6 +337,12 @@ blockquote{
         margin-left: 62px;
     }
 
+    .block-line{
+        width: 10px;
+        height: 44px;
+    }
+
+    
     .nav{
         height: 20px;
         left: 16px;
