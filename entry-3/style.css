@@ -1,11 +1,24 @@
 :root{
     --selected-nav-height: 110px;
+    --nav-type: calc(16px/1.3);
 }
 
 
 @media (min-width: 500px) {
     :root{
         --selected-nav-height: 70px;
+ }
+ }
+
+ @media (min-width: 545px) {
+    :root{
+        --nav-type: 16px;
+ }
+ }
+
+ @media (min-width: 700px) {
+    :root{
+        --nav-type: 18px;
  }
  }
 

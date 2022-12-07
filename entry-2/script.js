@@ -4,10 +4,10 @@ let navText = document.querySelector('.nav-text')
 let body = document.querySelector('body')
 
 function smallMobileNav(){
-  mobileTitle.style.fontSize = "calc(16px/1.3)";
+  mobileTitle.style.fontSize = "var(--nav-type)";
   mobileTitle.style.lineHeight = "calc(25px/1.9)";
   mobileTitle.style.fontWeight = "200";
-  mobileTitle.style.marginTop = "4px";
+  mobileTitle.style.marginTop = "var(--top-margin)";
   secondEntry.style.height = "var(--nav-height)";
 }
 
@@ -23,7 +23,7 @@ function desktopNav(){
   mobileTitle.style.fontSize = "19px";
   mobileTitle.style.lineHeight = "calc(var(--leading)/1.9)";
   mobileTitle.style.fontWeight = "200";
-  mobileTitle.style.marginTop = "4px";
+  mobileTitle.style.marginTop = "var(--top-margin)";
   secondEntry.style.height = "100%";
 }
 
