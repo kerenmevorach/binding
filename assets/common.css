@@ -15,11 +15,11 @@
 :root{
     --base: 16px;
 
-    --heading: 15vw;
+    --heading: 13.25vw;
 
     --leading: 25px;
 
-    --heading-leading: 15.5vw;
+    --heading-leading: 13.75vw;
 
     --paragraph-spacing: 20px;
 
@@ -47,10 +47,10 @@
         --base: 20px;
 
         --leading: 32px;
-
+/* 
         --heading: 12.5vw;
 
-        --heading-leading: 12.5vw;
+        --heading-leading: 12.5vw; */
     }
 }
 
@@ -59,10 +59,14 @@
         --base: 20px;
 
         --leading: 34px;
+    }
+}
 
-        --heading: 12vw;
+@media (min-width: 1050px) {
+    :root{
+        --heading: 10vw;
 
-        --heading-leading: 12vw;
+        --heading-leading: 10vw;
     }
 }
 
@@ -95,8 +99,8 @@
         --page-spacing: 0.25in;
         --paragraph-spacing: 20px;
 
-        --heading: calc(var(--base) * 6.3);
-        --heading-leading: calc(var(--base) * 6.45);
+        --heading: calc(var(--base) * 5.75);
+        --heading-leading: calc(var(--base) * 5.9);
 
         --nav-height: 20px;
     
@@ -173,7 +177,7 @@ h1{
     line-height: var(--heading-leading);
     font-family: 'PP Radio Grotesk';
     font-weight: 100;
-    max-width: 12ch;
+    max-width: 20ch;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 40px;
